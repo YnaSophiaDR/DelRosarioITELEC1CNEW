@@ -1,0 +1,62 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var name = "Yna Sophia Del Rosario";
+    var email = "ynasophia.delrosario.cics@ust.edu.ph";
+    var age = 20;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        body {
+            background-image: url(https://img.freepik.com/free-vector/abstract-soft-pink-watercolor-decorative-background-design_1055-13447.jpg?w=1060&t=st=1693928245~exp=1693928845~hmac=200ffda1e8b4864d233489c437589ca29777ab7b9ed05f7824a1a08630091f13); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+        }
+        .img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto; 
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .info {
+            color: #000;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>About Me</h1>
+    <br />
+
+    <div style="text-align: center;">
+        <div class="img">
+            <img width="300" src="https://i.pinimg.com/1200x/c1/db/c7/c1dbc7aaebf75483dc5b39ae230b83c6.jpg" />
+        </div>
+        <div class="info"> I'm @name<br /> A @age year old IT student from University of Santo Tomas <br />You can contact me on @email</div>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Welcome ! - DelRosarioAct";
+}
+
+@{
+    DateTime date = DateTime.Now;
+    int Time = date.Hour;
+    string Month = date.ToString("MMMM");
+    string Week = date.ToString("dddd");
+    int Day = date.Day;
+    int Year = date.Year;
+    string Message = "";
+
+    if (Time >= 5 && Time < 12)
+    {
+        Message = "It is Morning";
+    }
+    else if (Time >= 12 && Time < 18)
+    {
+        Message = "It is Afternoon";
+    }
+    else
+    {
+        Message = "It is Evening"; 
+    }
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hello! Welcome to my Page.</h1>
+    <p>@Message on @Week, @Month @Day, @Year.</p>
+</div>
